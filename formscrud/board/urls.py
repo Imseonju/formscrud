@@ -18,10 +18,10 @@ from . import views
 
 urlpatterns = [
 path('list/', views.boardlist, name='boardlist'),
-path('show/<int:board_id>', views.show, name='show'),
+path('show/<int:pk>', views.show, name='show'),
 path('new/', views.new, name='new'),
 path('boardcreate/', views.boardcreate, name='boardcreate'),
 path('edit/', views.edit, name='edit'),
-path('boardupdate/<int:board_id>', views.boardupdate, name='boardupdate'),
-path('boarddelete/<int:board_id>', views.boarddelete, name='boarddelete'),
+path('boardupdate/<int:pk>', views.boardupdate, name='boardupdate'),
+path('boarddelete/<int:pk>', views.boarddelete, name='boarddelete'),
 ]

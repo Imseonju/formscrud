@@ -7,8 +7,8 @@
 </head>
 <body>
     <a href="{% url 'boardlist' %}">목록으로 이동</a><br>
-    <a href="{% url 'boardupdate' board.id %}">수정하기</a><br>
-<a href="{% url 'boarddelete' board.id %}">삭제하기</a><br>
+    <a href="{% url 'boardupdate' board.pk %}">수정하기</a><br>
+<a href="{% url 'boarddelete' board.pk %}">삭제하기</a><br>
 <h1>제목: {{board.title}}</h1>
 {{board.create_at}}<br>
 {{board.content}}<br>
